@@ -1,0 +1,3 @@
+Orange: #fb7813
+Blue: #035aa6
+Gray: #f4f4f4
