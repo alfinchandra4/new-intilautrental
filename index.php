@@ -28,24 +28,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="asset/styles.css" />
 
     <title>Inti Laut Rental</title>
   </head>
 
   <body>
     <div class="line-head"></div>
-    <div class="container">
-      <div class="parent">
-        <div class="left">LOGO</div>
-        <div class="fill-remaining-space"></div>
-        <div class="right">HOME</div>
-        <div class="right">ABOUT US</div>
-        <div class="right">PRODUCT</div>
-        <div class="right">PROJECTS</div>
-        <div class="right">CONTACT US</div>
+    <nav class="navbar navbar-expand-lg navbar-light container text-uppercase">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" 
+              data-toggle="collapse" 
+              data-target="#navbarNav" 
+              aria-controls="navbarNav" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link pl-2" href="index.php">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-2" href="about.php">About US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pl-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="alat.php">Alat Konstruksi</a>
+              <a class="dropdown-item" href="scaffolding.php">Scaffolding</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-2" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-2" href="#">Contact Us</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
     <div class="path">
       <div class="container content">
         <h2 class="main-navigation">HOME</h2>
@@ -79,14 +104,14 @@
     </div>
     <div class="text-center service-side mt-5">
       <div class="container">
-        <span class="font-weight-bold h2 home-service">Our Services</span>
+        <span class="font-weight-bold h2 home-service text-uppercase">Our Services</span>
         <div class="text mt-4">
           <div class="home-service-header mb-3">
             Kami menyediakan jasa rental alat berat dengan harga yang kompetitif namun berkualitas 
           </div>
           <div class="row">
             <div class="offset-md-2 col-md-4">
-              <div class="card shadow p-3 mb-5 bg-white rounded">
+              <div class="card shadow card-our-service p-3 mb-5 bg-white rounded">
                 <img src="asset/image/construction.svg" class="card-img-top img-fluid pt-5 pl-5 pr-5">
                 <div class="card-body">
                   <p class="card-text">
@@ -97,7 +122,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card shadow p-3 mb-5 bg-white rounded">
+              <div class="card shadow card-our-service p-3 mb-5 bg-white rounded">
                 <img src="asset/image/hammer.svg" class="card-img-top img-fluid pt-5 pl-5 pr-5">
                 <div class="card-body">
                   <p class="card-text">
@@ -112,7 +137,7 @@
       </div>
     </div>
     <div class="container text-center mt-4 product-side">
-      <span class="font-weight-bold h2 products">Our Products</span>
+      <span class="font-weight-bold h2 products text-uppercase">Our Products</span>
       <div class="text mt-4 col-md-8 offset-md-2">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -159,7 +184,7 @@
         <span class="font-weight-bold h2 get-our-service">Get Our Service</span>
         <div class="row mt-2">
           <div class="col-md-10 col-sm-12">
-            <p>Kami senantiasa terus meningkatkan kualitas dalam produk dan pelayanan demi terjaganya kepuasan konsumen. Hubungi kami, karena kami mempunyai penawaran terbaik untuk Anda </p>
+            <p>Kami senantiasa terus meningkatkan kualitas dalam produk dan pelayanan demi terjaganya kepuasan konsumen. <br/>Hubungi kami, karena kami mempunyai penawaran terbaik untuk Anda </p>
           </div>
           <div class="col-md-2 col-sm-12 text-center" style="text-decoration: none;">
             <p><a href="#" class="font-weight-bold btn-contact-us btn-block" style="text-decoration: none;">Contact Us</a></p>
@@ -167,58 +192,15 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="container footer-content">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="text-muted font-weight-bolder h4">Location</div>
-            <div class="company"> <i class="fa fa-home" aria-hidden="true"></i> @ 2020 Inti Laut Rental & Service</div>
-            <div class="street"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Jl. Raya Cisauk - Lapan, Tangerang. Banten.</div>
-            <div class="phone"> <i class="fa fa-phone" aria-hidden="true"></i> 087774829777 / 08113921777</div>
-            <div class="email"> <i class="fa fa-envelope" aria-hidden="true"></i> logamabadimultimakmur@gmail.com </div>
-          </div>
-          <div class="col-md-3">
-            <div class="text-muted font-weight-bolder h4">Alat Konstruksi</div>
-            <ul type="1" class="list-items">
-              <li>Baby Roller</li>
-              <li>Moln Aduk</li>
-              <li>Baby Rollerasdasd</li>
-              <li>Baby Roller</li>
-              <li>Baby Rollerasdas</li>
-              <li>Baby Rollerdd</li>
-              <li>Baby Roller</li>
-              <li>Baby Rollerasdasdasdad</li>
-              <li>Baby Roller</li>  
-            </ul>
-          </div>
-          <div class="col-md-5">
-            <div class="text-muted font-weight-bolder h4">Get in touch</div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5370056925553!2d106.63815661432406!3d-6.324375795423035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e59866a9af4f%3A0x4de52929d72ed6b7!2sINTI%20LAUT%20RENTAL!5e0!3m2!1sid!2sid!4v1592291262255!5m2!1sid!2sid" width="450" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
-      <script>
-        $('.carousel').carousel({
-          interval: 3000
-        });
-      </script>
+    <?php include 'static/footer.php'; ?>
+    <?php include 'static/script.php'; ?>
+
+
+    <script>
+      $('.carousel').carousel({
+        interval: 3000
+      });
+    </script>
   </body>
 </html>
