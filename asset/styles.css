@@ -18,7 +18,8 @@
 }
 
 .jumbotron {
-  background: url("http://www.lammindonesia.com/wp-content/uploads/2017/02/slider-1.png") no-repeat center center;
+  /* background: url("http://www.lammindonesia.com/wp-content/uploads/2017/02/slider-1.png") no-repeat center center; */
+  background: image("/asset/example/slider3.png") no-repeat center center;
   background-size: cover;
   height: 400px;
 }
@@ -31,9 +32,9 @@
   border-bottom: 5px solid #035aa6;
 }
 
-.product-side, .service-side {
+/* .product-side, .service-side {
   min-height: 500px;
-}
+} */
 
 .carousel-inner > .carousel-item > img{
   height: 400px;
@@ -61,9 +62,9 @@
   color: white;
 }
 
-.get-our-service-side {
+/* .get-our-service-side {
   border-bottom: 5px solid #035aa6;
-}
+} */
 
 .btn-contact-us {
   padding-top: 10px;
@@ -90,16 +91,16 @@
 }
 
 .navbar {
-  padding: 20px;
+  padding: 10px;
   font-family: "Pontano Sans", sans-serif;
   font-size: 12pt;
 }
 
-.nav-item:hover, {
+.navbar-nav .nav-item .nav-link:hover,
+.active {
   background-color: #fb7813;
-  color: white;
+  color: white !important;
   transition: 0.5s;
-  border-radius: 5px;
 }
 
 .aboutus-side {
@@ -116,5 +117,28 @@
 }
 
 .cardscaffolding {
-  background-color: #f4f4f4;
+  background-color: #fb7813;
+  color: white;
+}
+
+.footer {
+  font-family: "Pontano Sans", sans-serif;
+  border-top: 5px solid #fb7813;
+}
+
+.font:hover {
+  color: #fb7813;;
+}
+
+@media (min-width: 641px) {
+  span.icon {display:none}
+  span.text {display:inline-block}
+}
+
+@media (max-width: 640px) {
+  span.icon {display:inline-block}
+  span.text {display:none};
+  #advantage {
+    height: 600px;
+  }
 }

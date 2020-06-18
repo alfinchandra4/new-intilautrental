@@ -8,28 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="asset/styles.css" />
-    <link rel="stylesheet" href="asset/dist/css/lightbox.min.css">
+    <?php include 'static/header.php'; ?>
 
     <title>Inti Laut Rental</title>
   </head>
@@ -37,7 +16,10 @@
   <body>
     <div class="line-head"></div>
     <nav class="navbar navbar-expand-lg navbar-light container text-uppercase">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+        <span class="text">Navbar</span>
+        <span class="icon"><img src="asset/image/intilaut.png" width="100" height="100" class="d-inline-block align-top" alt="" loading="lazy"/></span>
+      </a>
       <button class="navbar-toggler" type="button" 
               data-toggle="collapse" 
               data-target="#navbarNav" 
@@ -63,9 +45,7 @@
               <a class="dropdown-item" href="scaffolding.php">Scaffolding</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link pl-2" href="#">Gallery</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link pl-2" href="#">Contact Us</a>
           </li>
@@ -75,7 +55,7 @@
     <div class="path">
       <div class="container content">
         <h2 class="main-navigation">PRODUK SCAFFOLDING STEGER</h2>
-        <div class="font-weight-lighter child-navigation"><a href="index.html">Home</a> / Produk Scaffolding Steger</a></div>
+        <div class="font-weight-lighter child-navigation"><a href="index.php">Home</a> / Produk Scaffolding Steger</a></div>
       </div>
     </div>
 

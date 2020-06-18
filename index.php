@@ -8,27 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="asset/styles.css" />
+    <?php include 'static/header.php'; ?>
 
     <title>Inti Laut Rental</title>
   </head>
@@ -36,7 +16,10 @@
   <body>
     <div class="line-head"></div>
     <nav class="navbar navbar-expand-lg navbar-light container text-uppercase">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+        <span class="text font-weight-lighter">INTI LAUT RENTAL</span>
+        <span class="icon"><img src="asset/image/intilaut.png" width="100" height="100" class="d-inline-block align-top" alt="" loading="lazy"/></span>
+      </a>
       <button class="navbar-toggler" type="button" 
               data-toggle="collapse" 
               data-target="#navbarNav" 
@@ -62,9 +45,7 @@
               <a class="dropdown-item" href="scaffolding.php">Scaffolding</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link pl-2" href="#">Gallery</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link pl-2" href="#">Contact Us</a>
           </li>
@@ -79,27 +60,17 @@
     </div>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
+        <h1 class="display-4">Selamat datang di Inti Laut Rental</h1>
         <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
+          Perusahaan penyedia alat berat siap pakai dengan harga terjangkau
         </p>
       </div>
     </div>
     <div class="container text-center">
-      <span class="text font-weight-bolder h2 welcome"></span>
       <div class="text mt-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eos
-        nostrum, ipsum magni sequi numquam, reprehenderit provident maxime
-        quaerat enim nisi nesciunt quae laborum perspiciatis eius ipsam libero
-        commodi nihil voluptatem vitae voluptatibus ad soluta? Neque molestiae
-        quam reprehenderit veritatis itaque, nam nesciunt natus ipsum laboriosam
-        commodi quod labore non impedit, aspernatur sit pariatur earum, ullam
-        sed ad! Esse fuga hic inventore assumenda quaerat, modi neque. Impedit,
-        perferendis. Earum esse, inventore corrupti quod at sit architecto
-        corporis aperiam distinctio maiores eos praesentium quas veniam ex
-        impedit reprehenderit? Ad magnam eaque nobis repudiandae possimus
-        suscipit odit in adipisci mollitia. Provident, voluptas!
+        <div class="row">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iure corporis harum, quam ullam aspernatur voluptate excepturi error, amet aliquid sequi perspiciatis iusto dignissimos autem consequatur veniam? Delectus, quisquam aliquid!
+        </div>
       </div>
     </div>
     <div class="text-center service-side mt-5">
@@ -136,8 +107,9 @@
         </div>
       </div>
     </div>
+
     <div class="container text-center mt-4 product-side">
-      <span class="font-weight-bold h2 products text-uppercase">Our Products</span>
+      <span class="font-weight-bold h2 products text-uppercase">Pesanan terbanyak</span>
       <div class="text mt-4 col-md-8 offset-md-2">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -147,21 +119,21 @@
           </ol>
           <div class="carousel-inner" >
             <div class="carousel-item active">
-              <img src="http://www.lammindonesia.com/wp-content/uploads/2017/02/slider-1.png" class="d-block w-100" alt="...">
+              <img src="asset/image/advantages/babyroller1.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="http://www.lammindonesia.com/wp-content/uploads/2017/02/slider-2.png" class="d-block w-100" alt="...">
+              <img src="asset/image/advantages/jackhammer.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="http://www.lammindonesia.com/wp-content/uploads/2017/02/slider-3.png" class="d-block w-100" alt="...">
+              <img src="asset/image/advantages/genset.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -195,7 +167,6 @@
 
     <?php include 'static/footer.php'; ?>
     <?php include 'static/script.php'; ?>
-
 
     <script>
       $('.carousel').carousel({
